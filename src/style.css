@@ -79,10 +79,10 @@ header {
   grid-area: header;
   z-index: 1;
 
-  padding: 0.6rem 1.7rem;
+  padding: 0.4rem 1.7rem;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   & input {
     width: 25rem;
     appearance: none;
@@ -114,6 +114,10 @@ header > section > div {
   & p {
     font-weight: bolder;
     font-size: 0.7rem;
+  }
+  & span {
+    font-weight: 100;
+    font-size: 0.5rem;
   }
 }
 
@@ -169,4 +173,16 @@ hr {
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+
+button {
+  appearance: none;
+  color: white;
+  font-size: 0.5rem;
+  font-weight: 900;
+  width: 3.5rem;
+  padding: 0.4rem;
+  background-color: rgb(102, 102, 253);
+  border: none;
+  border-radius: 9px;
 }
