@@ -78,7 +78,45 @@ header {
   background-color: #fff;
   grid-area: header;
   z-index: 1;
+
+  padding: 0.6rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    width: 25rem;
+    appearance: none;
+    border-radius: 15px;
+    height: 1rem;
+    border: 1px none;
+    background-color: #ecececdc;
+  }
+  & svg {
+    width: 1rem;
+  }
+  & img {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
+header > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > section > div {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 0.6rem;
+  & p {
+    font-weight: bolder;
+    font-size: 0.7rem;
+  }
+}
+
 .container {
   display: grid;
   grid-template-columns: 8rem 1fr;
@@ -126,10 +164,9 @@ hr {
   display: flex;
   gap: 1rem;
   align-items: center;
-}
-
-img {
-  border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
+  & img {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
