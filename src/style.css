@@ -16,7 +16,8 @@ h2 {
   font-size: 0.8rem;
 }
 h3 {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  margin-bottom: 0.31rem;
 }
 aside {
   padding: 0.5rem 1rem;
@@ -139,11 +140,13 @@ header,
   box-shadow: 1px 1px 6px rgb(184, 182, 182);
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .story {
   margin-bottom: 1rem;
-  & p {
-    padding-top: 0.3rem;
-  }
 }
 .story,
 .trends,
@@ -152,6 +155,9 @@ header,
   padding: 1rem;
   border-radius: 0.3rem;
   padding: 1rem;
+  & p {
+    margin-top: 0.1rem;
+  }
 }
 p {
   font-size: 0.5rem;
@@ -185,4 +191,14 @@ button {
   background-color: rgb(29, 29, 240);
   border: none;
   border-radius: 9px;
+}
+
+.react {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+  padding-right: 1rem;
+  & svg {
+    width: 0.8rem;
+  }
 }
